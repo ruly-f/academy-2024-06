@@ -13,7 +13,7 @@ models:
           - not_null
               
       - name: NM_PRODUTO
-        description: Blablabla
+        description: Nome do produto.
         tests:
           - not_null
       
@@ -25,19 +25,19 @@ models:
                 severity: warn
 
       - name: QUANTIDADE_POR_UNIDADE
-        description: Blablabla
+        description: Quantidade por unidade do produto.
 
       - name: PRECO_POR_UNIDADE
-        description: Blablabla
+        description: Preço da unidade.
 
       - name: UNIDADE_EM_ESTOQUE
-        description: Blablabla
+        description: Quantidade em estoque.
 
       - name: UNIDADE_POR_PEDIDO
-        description: Blablabla
+        description: Unidades que estão em pedido.
 
       - name: NIVEL_DE_PEDIDO
-        description: Blablabla
+        description: Nivel de estoque para um um novo pedido ser feito.
 
       - name: IS_DISCONTINUADO
-        description: Blablabla
+        description: Flag que indica se o produto ainda é comercializado.

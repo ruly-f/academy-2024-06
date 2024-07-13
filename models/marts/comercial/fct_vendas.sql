@@ -9,11 +9,27 @@ with
         from {{ ref('dim_funcionarios') }}
     )
 
+    , dim_clientes as (
+        select *
+        from {{ ref('dim_clientes') }}
+    )
+
+    , dim_fornecedores as (
+        select *
+        from {{ ref('dim_fornecedores') }}
+    )
+
+    , dim_transportadoras as (
+        select *
+        from {{ ref('dim_transportadoras') }}
+    )
+
     , int_vendas as (
         select *
         from {{ ref('int_comercial__detalhamento_ordens') }}
     )
 
+    /*  Podem adicionar mais colunas das dimensões caso desejarem. */
     , joined as (
         select
             int_vendas.SK_VENDAS
