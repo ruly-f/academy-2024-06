@@ -9,6 +9,3 @@ models:
         tests:
           - unique
           - not_null
-
-      - name: nome_funcionario
-        description: TBD
